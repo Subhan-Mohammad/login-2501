@@ -1,13 +1,10 @@
-# - Manifest file 
-# - a sample yaml format to create the pod
-
 apiVersion: v1
 kind: Pod
-metadata: 
+metadata:
   name: nginx-pod
 spec:
   containers:
-  - image: nginx
-    name: nginx
+  - name: nginx
+    image: nginx
     ports:
-    - containerPort:80
+    - containerPort: 80
