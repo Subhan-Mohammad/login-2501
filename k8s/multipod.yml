@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: nginx-pod
+spec: 
+  containers: 
+  - name: build-container
+    image: ubuntu-22.04
+    command: ["sleep"]
+    args: ["300"]
+  - name: deploy-container
+    image: nginx
+    ports:
+    - containerPort: 80
