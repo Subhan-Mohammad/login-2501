@@ -5,7 +5,7 @@ metadata:
 spec: 
   containers: 
   - name: build-container
-    image: ubuntu-22.04
+    image: ubuntu:22.04
     command: ["sleep"]
     args: ["300"]
   - name: deploy-container
